@@ -5,15 +5,16 @@ fig = plt.figure()
 #creating a subplot 
 ax = fig.add_subplot(1,1,1)
 
-def animate(i, file = 'time_series_data.csv'):
+def historic_animate(i, file = 'historic_time_series_data.csv'):
     data = pd.read_csv(f'../data/{file}')
     xs = []
     ys = []
-    values = data['5. Exchange Rate'].values
+    values = data['4. close'].values
+    ax.plot(values,range(len(values)))
     for x,y in zip(range(len(values)), values):
         xs.append(x)
         ys.append(y)
-    ax.clear()
+
     ax.plot(xs,ys)
     plt.xlabel('Date')
     plt.ylabel('Price')
@@ -21,5 +22,5 @@ def animate(i, file = 'time_series_data.csv'):
     fig.autofmt_xdate(rotation=45)
 
     
-ani = FuncAnimation(fig, animate, interval=15000) 
+ani = FuncAnimation(fig, historic_animate, interval=100) 
 plt.show()
