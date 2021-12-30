@@ -2,13 +2,13 @@
 ### This project is to practice and implement the following:
 
 1. Secure access to **reliable data**
-  /**
-  -Cryptocompare
-  -TDAMERITRADE 
-  -RobinHood
-  -Binance
-  -Other paid services
-  */
+/**
+  *Cryptocompare
+  *TDAMERITRADE 
+  *RobinHood
+  *Binance
+  *Other paid services
+*/
 2. Secure access to **reliable trading platform** (Combining 1 and 2 is preferable)
   -TDAMERITRADE 
   -RobinHood
