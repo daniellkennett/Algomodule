@@ -1,4 +1,4 @@
-CONSUMER_KEY = 'LAGNY3YGWVSGN5LUJASFNNRRC10FUF70'
-REDIRECT_URI = 'http://localhost:9000'
-JSON_PATH = '/media/daniel/Python/Projects/Algomodule/src/TDameritrade'
+CONSUMER_KEY = 'LAGNY3YGWVSGN5LUJASFNNRRC10FUF70@AMER.OAUTHAP'
+REDIRECT_URI = 'http://localhost'
+JSON_PATH = '/home/daniel/Desktop/Python/Projects/Algomodule/TDameritrade/key.json'
 
