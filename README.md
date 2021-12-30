@@ -2,7 +2,7 @@
 ### This project is to practice and implement the following:
 
 1. Secure access to **reliable data**
-  /*
+  /**
   -Cryptocompare
   -TDAMERITRADE 
   -RobinHood
