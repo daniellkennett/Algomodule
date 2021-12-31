@@ -1,3 +1,5 @@
+from datetime import datetime
+import numpy as np
 class PaperTrader():
     """
     Author: Daniel Kennett
