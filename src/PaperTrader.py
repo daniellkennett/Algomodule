@@ -14,6 +14,8 @@ class PaperTrader():
     
     def __init__(self, starting_amount):
         self.free_cash = starting_amount
+        self.record = {'key': [], 'ticker': [], 'buy_price': [], 'buy_amount': [], 'buy_total_amount': [], 'buy_time': [], 
+              'sell_price':[], 'sell_amount': [], 'sell_total_amount': [], 'sell_time': [], 'open': [], 'profit/loss':[]}
         
     def now():
         return datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
