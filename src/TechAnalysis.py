@@ -62,15 +62,13 @@ class TechAnalysis:
         #23.6%, 38.2%, 50%, 61.8%, and 100%#
         return None
     
-    
     """
     Use Fractional Differencing to create stationary data for predictions
     Data offsets by weights_window_size
     """
-    
     @staticmethod
     def get_weights_floored(d, num_k, floor=1e-3):
-        r"""Calculate weights ($w$) for each lag ($k$) through
+        """Calculate weights ($w$) for each lag ($k$) through
         $w_k = -w_{k-1} \frac{d - k + 1}{k}$ provided weight above a minimum value
         (floor) for the weights to prevent computation of weights for the entire
         time series.
@@ -98,7 +96,7 @@ class TechAnalysis:
     
     @staticmethod
     def frac_diff(df, d, floor=1e-3):
-        r"""Fractionally difference time series via CPU.
+        """Fractionally difference time series via CPU.
 
         Args:
             df (pd.DataFrame): dataframe of raw time series values.
@@ -125,7 +123,7 @@ class TechAnalysis:
 
         # Return FD values and weights
         df_fd = pd.DataFrame(df_fd)
-
+        
         return df_fd, weights
 
     def fractional_difference(self, column_name, alpha):
@@ -143,6 +141,5 @@ class TechAnalysis:
             if pvalue < alpha:
                 break      
         best_d_value = adfs[-1][0]
-        
         
         return df_fd, weights, best_d_value
