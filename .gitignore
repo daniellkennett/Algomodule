@@ -131,3 +131,4 @@ dmypy.json
 
 # hide personal informatrion
 /config
+/Binance/config.py
