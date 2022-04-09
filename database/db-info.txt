@@ -1,0 +1,7 @@
+arn:aws:rds:us-east-1:395975088873:db:algomodule
+
+Hostname: algo-1.cqkzwypggftm.us-east-1.rds.amazonaws.com
+Port: 3306
+Username: admin
+Password: Makecashmoney
+

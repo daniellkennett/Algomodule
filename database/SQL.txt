@@ -1,0 +1,17 @@
+select * from AlgoModule.eth_hourly;
+drop table AlgoModule.eth_hourly;
+
+create table AlgoModule.btc_hourly
+(
+open_time datetime,
+close_time datetime,
+open_price double(20,9),
+close_price double(20,9),
+high_price double(20,9), 
+low_price double(20,9),
+volume double(20,9),
+quote_av double(20,9),
+trades int,
+tb_base_av double(20,9),
+tb_quote_av double(20,9)
+);
